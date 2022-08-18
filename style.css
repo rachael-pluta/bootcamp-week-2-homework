@@ -1,0 +1,31 @@
+:root {
+    --dark: #1a1919;
+    --light: #eee7e1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+    background-color: var(--dark);
+}
+
+.headings {
+    font: var(--font-family);
+    color: var(--light);
+}
+
+.key-application {
+    [insert size details here]
+}
+
+.sub-application {
+    [insert size details here]
+}
+
+.links {
+    color: var(--light);
+}
+
+.para-text {
+    color: var(--light);
+}
+
