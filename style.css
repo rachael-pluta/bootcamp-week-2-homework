@@ -1,31 +1,82 @@
 :root {
     --dark: #1a1919;
-    --light: #eee7e1;
+    --light: #fff;
     font-family: 'Montserrat', sans-serif;
 }
 
-.background {
+.body {
     background-color: var(--dark);
+    color: var(--light);
 }
 
-.headings {
+/* grid display */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2% 2%;
+    padding: 1rem;
+    grid-template-areas: 
+    "grid-item-1 grid-item-2 grid-item-3"
+    "grid-item-4 grid-item-5 grid-item-6"
+    "grid-item-4 grid-item-5 grid-item-7"
+    "grid-item-8 grid-item-9 grid-item-9"
+    "grid-item-10 grid-item-11 grid-item-11";
+}
+
+/* sets the items within the grid */
+.grid-item-1 { grid-area: grid-item-1; }
+.grid-item-2 { grid-area: grid-item-2; }
+.grid-item-3 { grid-area: grid-item-3; }
+.grid-item-4 { grid-area: grid-item-4; }
+.grid-item-5 { grid-area: grid-item-5; }
+.grid-item-6 { grid-area: grid-item-6; }
+.grid-item-7 { grid-area: grid-item-7; }
+.grid-item-8 { grid-area: grid-item-8; }
+.grid-item-9 { grid-area: grid-item-9; }
+.grid-item-10 { grid-area: grid-item-10; }
+.grid-item-11 { grid-area: grid-item-11; }
+
+/* sets the static display of the links */
+a {
+    color:var(--light);
+    text-decoration: none;
+}
+
+/* sets links when hovered over */
+a:hover {
+    font-style: italic;
+}
+
+/* Start of classes setting header element of the page */
+.header {
+    padding: 5px;
     font: var(--font-family);
     color: var(--light);
 }
 
-.key-application {
-    [insert size details here]
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
 }
 
-.sub-application {
-    [insert size details here]
+.header nav {
+    margin-right: 20px;
+    float:right;
 }
 
-.links {
-    color: var(--light);
+.header nav ul li {
+    display: inline-block;
+    padding-top: 35px;
+    margin-left: 25px;
+    font-size: 20px;
+    list-style-type: none;
 }
+/* End of classes setting header element of the page */
 
-.para-text {
-    color: var(--light);
-}
+
+
+
+
+
 
