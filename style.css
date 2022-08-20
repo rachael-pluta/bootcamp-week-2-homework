@@ -12,11 +12,10 @@
 /* grid display */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 0.5fr 1fr 1fr; 
+    grid-template-rows: repeat(3, auto);
     gap: 2% 2%;
     padding: 1rem;
-    height: 100%;
     grid-template-areas: 
     "grid-item-1 grid-item-2 grid-item-3"
     "grid-item-4 grid-item-5 grid-item-6"
@@ -25,14 +24,36 @@
 }
 
 /* sets the items within the grid */
-.grid-item-1 { grid-area: grid-item-1; }
+.grid-item-1 { 
+    grid-area: grid-item-1;
+    width: 30%;
+ }
 .grid-item-2 { grid-area: grid-item-2; }
-.grid-item-3 { grid-area: grid-item-3; }
-.grid-item-4 { grid-area: grid-item-4; }
-.grid-item-5 { grid-area: grid-item-5; }
-.grid-item-6 { grid-area: grid-item-6; }
-.grid-item-7 { grid-area: grid-item-7; }
-.grid-item-8 { grid-area: grid-item-8; }
+.grid-item-3 { 
+    grid-area: grid-item-3;
+    max-width: auto;
+    height: 450px;
+     }
+.grid-item-4 { 
+    grid-area: grid-item-4;
+    width: 30%;
+ }
+.grid-item-5 { 
+    grid-area: grid-item-5;
+    max-width: 100%;
+    height: auto;
+}
+.grid-item-6 { 
+    grid-area: grid-item-6;
+    width: 572px;
+ }
+.grid-item-7 { 
+    grid-area: grid-item-7;
+width: 572px; }
+.grid-item-8 { 
+    grid-area: grid-item-8; 
+    height: 150px;
+}
 .grid-item-9 { grid-area: grid-item-9; }
 
 /* sets the static display of the links */
@@ -46,7 +67,7 @@ a:hover {
     font-style: italic;
 }
 
-/* Start of classes setting header element of the page */
+/* start of classes setting header element of the page */
 .header {
     padding: 5px;
     font: var(--font-family);
