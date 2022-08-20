@@ -1,0 +1,78 @@
+:root {
+    --dark: #1a1919;
+    --light: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* grid display */
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr; 
+    grid-template-rows: repeat(2, auto);
+    gap: 2% 2%;
+    padding: 1rem;
+    grid-template-areas: 
+    "grid-item-1 grid-item-2 grid-item-2"
+    "grid-item-3 grid-item-2 grid-item-2";
+}
+
+.grid-item-1 { 
+    grid-area: grid-item-1;
+    width: 30%;
+ }
+.grid-item-2 { 
+    grid-area: grid-item-2; 
+    max-width: auto;
+    height: 792px;
+}
+.grid-item-3 { 
+    grid-area: grid-item-3;
+    width: 30%;
+}
+
+/* sets the static display of the links */
+a {
+    color:var(--light);
+    text-decoration: none;
+}
+
+/* sets links when hovered over */
+a:hover {
+    font-style: italic;
+}
+
+/* start of classes setting header element of the page */
+.header {
+    padding: 5px;
+    font: var(--font-family);
+    color: var(--light);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav {
+    margin-right: 20px;
+    float:right;
+}
+
+.header nav ul li {
+    display: inline-block;
+    padding-top: 35px;
+    margin-left: 25px;
+    font-size: 20px;
+    list-style-type: none;
+}
+/* End of classes setting header element of the page */
+
+.footer {
+    text-align: center;
+}
+
