@@ -1,7 +1,7 @@
 :root {
     --dark: #1a1919;
     --light: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .body {
@@ -20,7 +20,7 @@
     "grid-item-1 grid-item-2 grid-item-3"
     "grid-item-1 grid-item-2 grid-item-4"
     "grid-item-5 grid-item-6 grid-item-7"
-    "grid-item-8 grid-item-9 grid-item-9";
+    "grid-item-8 grid-item-9 grid-item-7";
 }
 
 .grid-item-1 { 
@@ -53,51 +53,13 @@
  }
 .grid-item-8 { 
     grid-area: grid-item-8; 
-    height: 150px;
+    align-self: end;
+
 }
 .grid-item-9 { 
     grid-area: grid-item-9; 
+    align-self: end;
 }
-
-
-
-
-    /*"grid-item-1 grid-item-2 grid-item-3"
-    "grid-item-4 grid-item-5 grid-item-6"
-    "grid-item-4 grid-item-5 grid-item-7"
-    "grid-item-8 grid-item-9 grid-item-9";*/
-
-/*.grid-item-1 { 
-    grid-area: grid-item-1;
-    width: 30%;
- }
-.grid-item-2 { grid-area: grid-item-2; }
-.grid-item-3 { 
-    grid-area: grid-item-3;
-    max-width: auto;
-    height: 450px;
-     }
-.grid-item-4 { 
-    grid-area: grid-item-4;
-    width: 30%;
- }
-.grid-item-5 { 
-    grid-area: grid-item-5;
-    max-width: 100%;
-    height: auto;
-}
-.grid-item-6 { 
-    grid-area: grid-item-6;
-    width: 572px;
- }
-.grid-item-7 { 
-    grid-area: grid-item-7;
-width: 572px; }
-.grid-item-8 { 
-    grid-area: grid-item-8; 
-    height: 150px;
-}
-.grid-item-9 { grid-area: grid-item-9; } */
 
 /* sets the static display of the links */
 a {
@@ -136,7 +98,9 @@ a:hover {
 }
 /* End of classes setting header element of the page */
 
-
+.footer {
+    text-align: center;
+}
 
 
 
