@@ -12,8 +12,10 @@
 /* grid display */
 .grid-container {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: 0.5fr 1fr 1fr; 
     grid-template-rows: repeat(3, auto);
+    float: left;
     gap: 2% 2%;
     padding: 1rem;
     grid-template-areas: 
@@ -25,24 +27,24 @@
 
 .grid-item-1 { 
     grid-area: grid-item-1;
-    width: 30%;
+    max-width: 30%;
  }
 .grid-item-2 { 
     grid-area: grid-item-2; 
     max-width: auto;
-    height: 792px;
+    max-height: 792px;
 }
 .grid-item-3 { 
     grid-area: grid-item-3;
-    width: 572px;
+    max-width: 572px;
 }
 .grid-item-4 { 
     grid-area: grid-item-4;
-    width: 572px;
+    max-width: 572px;
  }
 .grid-item-5 { 
     grid-area: grid-item-5;
-    width: 30%;
+    max-width: 30%;
 }
 .grid-item-6 { 
     grid-area: grid-item-6;
