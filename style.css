@@ -9,62 +9,65 @@
     color: var(--light);
 }
 
-/* grid display */
+/* grid display for desktop*/
 .grid-container {
-    display: grid;
-    box-sizing: border-box;
-    grid-template-columns: 0.5fr 1fr 1fr; 
-    grid-template-rows: repeat(5, auto);
-    float: left;
-    gap: 2% 2%;
-    padding: 1rem;
-    margin-bottom: 50px;
-    grid-template-areas: 
-    "grid-item-1 grid-item-2 grid-item-3"
-    "grid-item-1 grid-item-2 grid-item-4"
-    "grid-item-5 grid-item-6 grid-item-7"
-    "grid-item-8 grid-item-9 grid-item-7"
-    "footer footer footer";
+        min-width: 769px;
+        display: grid;
+        box-sizing: border-box;
+        gap: 2% 2%; 
+        padding: 1rem;
+        grid-template-columns: 10% 40% 40%; 
+        grid-template-rows: repeat(5); 
+        grid-template-areas: 
+        "work work-app-1 work-app-2"
+        "work work-app-1 work-app-3"
+        "about about-descr about-img"
+        "contact contact-dets about-img"
+        "footer footer footer"; 
 }
 
-.grid-item-1 { 
-    grid-area: grid-item-1;
-    max-width: 30%;
+.work { 
+    grid-area: work;
  }
-.grid-item-2 { 
-    grid-area: grid-item-2; 
-    max-width: auto;
-    max-height: 792px;
+.work-app-1 { 
+    grid-area: work-app-1; 
+    max-width: 100%;
 }
-.grid-item-3 { 
-    grid-area: grid-item-3;
-    max-width: 572px;
+.work-app-2 { 
+    grid-area: work-app-2;
+    max-width: 100%;
 }
-.grid-item-4 { 
-    grid-area: grid-item-4;
-    max-width: 572px;
+.work-app-3 { 
+    grid-area: work-app-3;
+    max-width: 100%;
  }
-.grid-item-5 { 
-    grid-area: grid-item-5;
-    max-width: 30%;
+.about { 
+    grid-area: about;
 }
-.grid-item-6 { 
-    grid-area: grid-item-6;
+.about-descr { 
+    grid-area: about-descr;
+    font-size: 13px;
  }
-.grid-item-7 { 
-    grid-area: grid-item-7;
-    max-width: 568px;
+.about-img { 
+    grid-area: about-img;
+    max-width: 100%;
  }
-.grid-item-8 { 
-    grid-area: grid-item-8; 
-    align-self: end;
+.contact { 
+    grid-area: contact; 
     margin: 0;
-
-}
-.grid-item-9 { 
-    grid-area: grid-item-9; 
     align-self: end;
+}
+.contact-dets { 
+    grid-area: contact-dets; 
     margin: 0;
+    align-self: end;
+    font-size: 13px;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
 }
 
 /* sets the static display of the links */
@@ -90,6 +93,14 @@ a:hover {
     font-size: 48px;
 }
 
+/*
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 36px;
+    }
+}
+*/
+
 .header nav {
     margin-right: 20px;
     float:right;
@@ -102,14 +113,41 @@ a:hover {
     font-size: 20px;
     list-style-type: none;
 }
+/*
+@media screen and (max-width: 768px) {
+    .header nav ul li {
+        padding: 10px;
+    }
+} 
+*/
 /* End of classes setting header element of the page */
 
-.footer {
-    grid-area: footer;
-    text-align: center;
+
+.work-app-1:hover, .work-app-2:hover, .work-app-3:hover {
+    opacity: 0.4;
 }
 
-
+@media screen and (max-width: 768px) {
+    .grid-container {
+        max-width: 768px;
+        display: grid;
+        box-sizing: border-box;
+        gap: 1% 2%; 
+        padding: 1rem;
+        grid-template-columns: repeat(2); 
+        grid-template-rows: 5%; 
+        grid-template-areas: 
+        "work work"
+        "work-app-1 work-app-1"
+        "work-app-1 work-app-1"
+        "work-app-2 work-app-2"
+        "work-app-3 work-app-3" 
+        "about about"
+        "about-img"
+        "about-descr"
+        "contact contact-dets"; 
+    }
+}
 
 
 
