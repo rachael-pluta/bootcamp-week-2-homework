@@ -14,15 +14,17 @@
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 0.5fr 1fr 1fr; 
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
     float: left;
     gap: 2% 2%;
     padding: 1rem;
+    margin-bottom: 50px;
     grid-template-areas: 
     "grid-item-1 grid-item-2 grid-item-3"
     "grid-item-1 grid-item-2 grid-item-4"
     "grid-item-5 grid-item-6 grid-item-7"
-    "grid-item-8 grid-item-9 grid-item-7";
+    "grid-item-8 grid-item-9 grid-item-7"
+    "footer footer footer";
 }
 
 .grid-item-1 { 
@@ -51,16 +53,18 @@
  }
 .grid-item-7 { 
     grid-area: grid-item-7;
-    max-width: 572px;
+    max-width: 568px;
  }
 .grid-item-8 { 
     grid-area: grid-item-8; 
     align-self: end;
+    margin: 0;
 
 }
 .grid-item-9 { 
     grid-area: grid-item-9; 
     align-self: end;
+    margin: 0;
 }
 
 /* sets the static display of the links */
@@ -101,6 +105,7 @@ a:hover {
 /* End of classes setting header element of the page */
 
 .footer {
+    grid-area: footer;
     text-align: center;
 }
 
