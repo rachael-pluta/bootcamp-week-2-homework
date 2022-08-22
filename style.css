@@ -36,7 +36,7 @@
         gap: 1% 2%; 
         padding: 1rem;
         grid-template-columns: auto auto; 
-        grid-template-rows: repeat(10, auto); 
+        grid-template-rows: repeat (10, auto); 
         grid-template-areas: 
         "work work"
         "work-app-1 work-app-1"
@@ -78,6 +78,7 @@
 .about-descr { 
     grid-area: about-descr;
     font-size: 13px;
+    text-align: center;
  }
 .about-img { 
     grid-area: about-img;
@@ -95,6 +96,7 @@
     margin: 0;
     align-self: end;
     font-size: 14px;
+    text-align: center;
 }
 .footer {
     grid-area: footer;
@@ -128,7 +130,7 @@ a:hover {
 
 .header nav {
     margin-right: 20px;
-    float:right;
+    float: right;
 }
 
 .header nav ul li {
@@ -138,8 +140,29 @@ a:hover {
     font-size: 20px;
     list-style-type: none;
 }
-/* End of classes setting header element of the page */
 
+/* nav display for mobile */
+@media screen and (max-width: 600px) {
+    .body {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header h1 {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header nav ul li {
+        display: flex;
+        flex-direction: column;
+        padding-left: none;
+        font-size: 14px;
+    }
+}
+/* End of classes setting header element of the page */
 
 .work-app-1:hover, .work-app-2:hover, .work-app-3:hover {
     opacity: 0.4;
