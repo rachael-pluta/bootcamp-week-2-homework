@@ -61,13 +61,13 @@
 }
 
 /* sets the static display of the links */
-a {
+.click {
     color:var(--light);
     text-decoration: none;
 }
 
 /* sets links when hovered over */
-a:hover {
+.click:hover {
     font-style: italic;
 }
 

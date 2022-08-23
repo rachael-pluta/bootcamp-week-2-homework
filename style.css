@@ -19,12 +19,13 @@
         padding: 1rem;
         grid-template-columns: fit-content(20%) fit-content(40%) fit-content(40%); 
         grid-template-rows: repeat(5, auto); 
+        grid-auto-flow: dense;
         grid-template-areas: 
         "work work-app-1 work-app-2"
         "work work-app-1 work-app-3"
         "about about-descr about-img"
         "contact contact-dets about-img"
-        "footer footer footer"; 
+        "footer footer footer";
 }
 
 /* grid display for smaller devices */
@@ -36,7 +37,8 @@
         gap: 1% 2%; 
         padding: 1rem;
         grid-template-columns: auto auto; 
-        grid-template-rows: repeat (10, auto); 
+        grid-template-rows: repeat (10, auto);
+        grid-auto-flow: dense; 
         grid-template-areas: 
         "work work"
         "work-app-1 work-app-1"
@@ -46,7 +48,7 @@
         "about about"
         "about-img about-img"
         "about-descr about-descr"
-        "contact contact-dets"
+        "contact-dets contact-dets"
         "footer footer"; 
     }
 }
@@ -61,7 +63,9 @@
     max-height: 100%;
 }
 .work-app-2 { 
-    grid-area: work-app-2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -106,13 +110,13 @@
 }
 
 /* sets the static display of the links */
-a {
+.click {
     color:var(--light);
     text-decoration: none;
 }
 
 /* sets links when hovered over */
-a:hover {
+.click:hover {
     font-style: italic;
 }
 
