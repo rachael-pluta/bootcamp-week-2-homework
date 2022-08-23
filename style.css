@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    all:unset;
+}
+
 .body {
     background-color: var(--dark);
     color: var(--light);
