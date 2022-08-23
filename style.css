@@ -160,6 +160,7 @@ a:hover {
         flex-direction: column;
         padding-left: none;
         font-size: 14px;
+        text-align: right;
     }
 }
 /* End of classes setting header element of the page */

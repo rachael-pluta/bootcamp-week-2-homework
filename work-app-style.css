@@ -1,0 +1,85 @@
+:root {
+    --dark: #1a1919;
+    --light: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* grid display for all devices */
+.grid-container {
+    display: grid;
+    box-sizing: border-box;
+    gap: 1% 2%;
+    padding: 1rem;
+    margin-right: 0px;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat (4, auto);
+    grid-template-areas:
+    "work work-app"
+    "work-p work-app"
+    "contact contact-dets"
+    "footer footer";
+}
+
+.work { 
+    grid-area: work;
+ }
+ .work-p {
+    grid-area: work-p;
+    font-size: 18px;
+    font-style: italic;
+    align-self: start;
+ }
+.work-app { 
+    grid-area: work-app; 
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    float: right;
+}
+.contact { 
+    grid-area: contact; 
+    margin: 0;
+    align-self: end;
+}
+.contact-dets { 
+    grid-area: contact-dets; 
+    margin: 0;
+    align-self: end;
+    font-size: 16px;
+    text-align: center;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* sets the static display of the links */
+a {
+    color:var(--light);
+    text-decoration: none;
+}
+
+/* sets links when hovered over */
+a:hover {
+    font-style: italic;
+}
+
+/* start of classes setting header element of the page */
+.header {
+    padding: 5px;
+    font: var(--font-family);
+    color: var(--light);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+/* End of classes setting header element of the page */
