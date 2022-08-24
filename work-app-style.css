@@ -30,12 +30,7 @@
     font-style: italic;
     align-self: start;
  }
- /* .work-p {
-    grid-area: work-p;
-    font-size: 18px;
-    font-style: italic;
-    align-self: start;
- } */
+ 
 .work-app { 
     grid-area: work-app; 
     object-fit: cover;
@@ -84,4 +79,25 @@
     display: inline-block;
     font-size: 48px;
 }
-/* End of classes setting header element of the page */
+/* end of classes setting header element of the page */
+
+/* sets the h2 text for smaller screens */
+@media screen and (max-width: 640px) {
+    .header h2 {
+        font-size: 16px;
+    }
+}
+
+/* sets the contact details text for smaller screens */
+@media screen and (max-width: 640px) {
+    .contact-dets {
+        font-size: 12px;
+    }
+}
+
+/* sets the footer text for smaller screens */
+@media screen and (max-width: 640px) {
+    .footer {
+        font-size: 12px;
+    }
+}
