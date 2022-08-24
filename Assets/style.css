@@ -14,12 +14,12 @@ a {
     color: var(--light);
 }
 
-/* grid display for desktop*/
+/* grid display for larger devices*/
 .grid-container {
         display: grid;
         box-sizing: border-box;
-        min-width: 640px;
-        max-width: 1200px;
+        min-width: 1008px;
+        /* max-width: 1200px; */
         gap: 2% 2%; 
         padding: 1rem;
         grid-template-columns: fit-content(20%) fit-content(40%) fit-content(40%); 
@@ -40,19 +40,19 @@ a {
 .work-app-1 { 
     grid-area: work-app-1; 
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
 }
 .work-app-2 { 
     grid-area: work-app-2;
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
 }
 .work-app-3 { 
     grid-area: work-app-3;
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
  }
 .about { 
@@ -66,7 +66,7 @@ a {
 .about-img { 
     grid-area: about-img;
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     max-height: 100%;
  }
 .contact { 
@@ -88,16 +88,18 @@ a {
     font-size: 14px;
 }
 
-/* grid display for smaller devices */
-@media screen and (max-width: 640px) {
+/* grid display for medium devices */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
     .grid-container {
-        max-width: 640px;
+        min-width: 641px;
+        max-width: 1007px;
         display: grid;
         box-sizing: border-box;
-        gap: 1% 2%; 
+        gap: 1.5vw 2vh; 
+        margin: 1fr 0;
         padding: 1rem;
-        grid-template-columns: auto auto; 
-        grid-template-rows: repeat (11, auto);
+        grid-template-columns: 1fr 2fr; 
+        grid-template-rows: repeat (11, 1fr);
         grid-auto-flow: dense; 
         grid-template-areas: 
         "work work"
@@ -114,8 +116,8 @@ a {
     }
 }
 
-/* sets the heading alignment for smaller devices */
-@media screen and (max-width: 640px) {
+/* sets the heading alignment for medium devices */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
     .work, .about, .contact {
         text-align: center;
     }
@@ -162,20 +164,20 @@ a {
     list-style-type: none;
 }
 
-/* nav display for smaller devices */
-@media screen and (max-width: 640px) {
+/* nav display for medium devices */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
     .body {
         width: 640px;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 641px) and (max-width: 1007px) {
     .header h1 {
         padding: 0px;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 641px) and (max-width: 1007px) {
     .header nav ul li {
         display: flex;
         flex-direction: column;
