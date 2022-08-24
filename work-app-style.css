@@ -20,20 +20,22 @@
     grid-template-rows: repeat (4, auto);
     grid-template-areas:
     "work work-app"
-    "work-p work-app"
+    "work work-app"
     "contact contact-dets"
     "footer footer";
 }
 
 .work { 
     grid-area: work;
+    font-style: italic;
+    align-self: start;
  }
- .work-p {
+ /* .work-p {
     grid-area: work-p;
     font-size: 18px;
     font-style: italic;
     align-self: start;
- }
+ } */
 .work-app { 
     grid-area: work-app; 
     object-fit: cover;

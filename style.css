@@ -118,6 +118,10 @@ a {
     }
 }
 
+.work-app-1:hover, .work-app-2:hover, .work-app-3:hover {
+    opacity: 0.4;
+}
+
 /* sets the static display of the links */
 .click {
     color:var(--light);
@@ -177,10 +181,6 @@ a {
     }
 }
 /* End of classes setting header element of the page */
-
-.work-app-1:hover, .work-app-2:hover, .work-app-3:hover {
-    opacity: 0.4;
-}
 
 
 
