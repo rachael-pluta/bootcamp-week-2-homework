@@ -8,6 +8,12 @@ It contains images of, and links to, my portfolio work, as well as an about me s
 
 This project taught me how to use advanced css styling, such as grid layout, flex boxes and media queries to format my page in a way that is visually appealing on large and small devices.
 
+Example of display for larger devices (ie. devices aboves 1008px):
+![Single column grid layout wih headings and text centered, and nav bar flowing vertically]()
+
+Example of display for medium devices (ie. devices between 641px and 1007px):
+![Two column grid layout with headings and text positioned to the left in line with images, and nav bar flowing horizontally]()
+
 ## Installation
 N/A
 
