@@ -1,3 +1,4 @@
+/* default styling used consistently throughout page */
 :root {
     --dark: #1a1919;
     --light: #fff;
@@ -25,12 +26,12 @@
     "footer footer";
 }
 
+/* sets each individual grid */
 .work { 
     grid-area: work;
     font-style: italic;
     align-self: start;
  }
- 
 .work-app { 
     grid-area: work-app; 
     object-fit: cover;
