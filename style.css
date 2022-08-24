@@ -1,3 +1,4 @@
+/* default styling used consistently throughout page */
 :root {
     --dark: #1a1919;
     --light: #fff;
@@ -32,6 +33,7 @@ a {
         "footer footer footer";
 }
 
+/* sets each individual grid */
 .work { 
     grid-area: work;
  }
@@ -112,12 +114,14 @@ a {
     }
 }
 
+/* sets the heading alignment for smaller devices */
 @media screen and (max-width: 640px) {
     .work, .about, .contact {
         text-align: center;
     }
 }
 
+/* sets hover effect on work applications */
 .work-app-1:hover, .work-app-2:hover, .work-app-3:hover {
     opacity: 0.4;
 }
